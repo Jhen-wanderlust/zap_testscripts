@@ -1,0 +1,29 @@
+
+
+Here is the command to execute the spider scan by CURL: 
+
+curl "http://localhost:8080/JSON/spider/action/scan/?zapapiformat=JSON&formMethod=GET&url=http://192.168.2.47/webprog_generic_login/acc_onedb/webapp/login.php&maxChildren=&recurse=contextName=&subtreeOnly=" 
+
+curl "http://localhost:8080/JSON/ajaxSpider/action/scan/zapapiformat=JSON&url=http://192.168.2.47/webprog_generic_login/acc_onedb/webapp/login.php&inScope="
+
+ZAP_Report.HTML
+curl "http://localhost:8080/OTHER/core/other/htmlreport/?formMethod=GET">
+
+
+
+
+Here is the command to trigger the active scan with CURL: 
+
+curl "http://localhost:8080/JSON/ascan/action/scan/?zapapiformat=JSON&formMethod=GET&url=http://192.168.2.47/webprog_generic_login/acc_onedb/webapp/login.php&recurse=&inScopeOnly=&scanPolicyName=&method=&postData=&contextId=" 
+
+
+The URL of the active scan is http://localhost:8090/JSON/ascan/action/scan/
+
+Reviewing the status scans:
+
+curl "http://localhost:8080/JSON/ascan/view/status/?zapapiformat=JSON&formMethod=GET&scanID="
+
+curl "http://localhost:8080/JSON/spider/view/status/?zapapiformat=JSON&formMethod=GET&scanID="
+
+
+curl "http://localhost:8080/HTML/core/view/alerts/"
