@@ -6,7 +6,7 @@ var By = Java.type('org.openqa.selenium.By');
 var Thread = Java.type('java.lang.Thread');
 var URL = 'http://192.168.2.47/online_test/pentest/onedb/webapp/login_view.php';
 var arr = 'http://192.168.2.47/online_test/pentest/onedb/webapp/payroll/main.php';
-var comcode = 'ATESTWEBTKM';
+var comcode = 'payjhen';
 var username = 'admin';
 var password = 'admin12345';
 
